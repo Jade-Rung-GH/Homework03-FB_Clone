@@ -553,6 +553,7 @@ section {
   overflow-y: auto;
   position: fixed;
   right: 0;
+  background-color: #f0f2f5;
 }
 
 .screen-right > div {
@@ -677,4 +678,36 @@ section {
   border-radius: 10px;
   width: 350px;
   cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .screen-right {
+  float: right;
+  width: 15%;
+  }
+  .screen-left {
+  float: left;
+  width: 15%;
+  }
+  .screen-mid {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-center {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .nav-right {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .screen-left {
+    display: none;
+  }
 }
